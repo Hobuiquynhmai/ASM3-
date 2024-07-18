@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.tongquat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 10px;
+}
+
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.topnav a {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  flex: 1;
+}
+
+.topnav a .abc {
+  margin: 5px 0 0;
+}
+
+.topnav a .fas {
+  font-size: 24px;
+}
+
+.name-title {
+  text-align: center;
+}
+
+.name-title .ten1 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.name-title .them {
+  font-size: 12px;
+  margin: 0;
+  color: grey;
+}
+
+/*NAVBAR*/
+/* Hide the name and title on tablet and smaller screens */
+@media (max-width: 768px) {
+  .name-title {
+    display: none;
+  }
+}
+
+/*THÔNG TIN CÁ NHÂN*/
+/* Adjust layout for tablet screens */
+@media (max-width: 768px) {
+  .information {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .career-objective,
+  .personal-info {
+    margin: 5px;
+  }
+}
+/* Adjust layout for mobile screens */
+@media (max-width: 576px) {
+  .information {
+    flex-direction: column;
+  }
+
+  .career-objective,
+  .personal-info {
+    margin: 10px 0;
+  }
+}
